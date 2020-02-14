@@ -1,0 +1,13 @@
+#version de docker compose
+version: "3.7"
+services:
+  web:
+    build: .
+    ports:
+      - "8080:8080" #pas d'image préciser, donc le port spécifié local doit être le meme que le port exposé.
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
