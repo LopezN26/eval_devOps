@@ -1,0 +1,10 @@
+#version de docker compose
+version: "3.7"
+services:
+  api:
+
+myreact:
+
+mongo:
+
+  
